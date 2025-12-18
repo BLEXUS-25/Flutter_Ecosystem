@@ -19,6 +19,7 @@ main {
   width: 100%;
 }
 main nav {
+  position: fixed;
   width: 100%;
   padding: 1.2rem 1.5rem;
   display: flex;
@@ -364,6 +365,69 @@ main .section-7 .box .btns button:nth-of-type(2) {
   cursor: pointer;
   font-size: 0.9rem;
 }
+main footer {
+  padding: 4rem;
+}
+main footer .main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+main footer .main div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main footer .main div a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+main footer .main div a:nth-of-type(1) {
+  color: black;
+  font-weight: bold;
+}
+main footer .main .logo {
+  width: 100%;
+}
+main footer .main .logo img {
+  scale: 0.8;
+  align-self: flex-start;
+}
+main footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+main footer .socials a {
+  text-decoration: none;
+}
+main footer .socials a i {
+  font-size: 1.2rem;
+  color: rgb(58, 58, 58);
+}
+main footer .tray {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main footer .tray div:nth-of-type(1) {
+  color: grey;
+}
+main footer .tray div:nth-of-type(2) {
+  display: flex;
+  gap: 1rem;
+}
+main footer .tray div:nth-of-type(2) a {
+  color: grey;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
 
 @media (min-width: 1024px) {
   main nav {
@@ -498,5 +562,34 @@ main .section-7 .box .btns button:nth-of-type(2) {
   main .section-7 .box .btns {
     padding: 1rem 0rem;
     gap: 2rem;
+  }
+  main footer .main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  main footer .main div {
+    margin-right: 3rem;
+  }
+  main footer .main div:nth-of-type(1) {
+    margin-right: 0;
+  }
+  main footer .main div:nth-of-type(4) {
+    margin-top: 2rem;
+  }
+  main footer .main .logo {
+    width: 50%;
+  }
+  main footer .socials {
+    justify-content: flex-start;
+  }
+  main footer .tray {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+  }
+  main footer .tray div:nth-of-type(1) {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

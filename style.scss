@@ -25,6 +25,7 @@ main {
     width: 100%;
 
     nav {
+        position: fixed;
         width: 100%;
         padding: 1.2rem 1.5rem;
         display: flex;
@@ -385,6 +386,7 @@ main {
                 align-self: flex-start;
                 display: flex;
                 gap: 1rem;
+
                 button:nth-of-type(1) {
                     background-color: white;
                     color: #0468D7;
@@ -407,6 +409,76 @@ main {
             }
         }
 
+    }
+
+    footer {
+        padding: 4rem;
+
+        .main {
+            @include flex-column(3.5rem);
+            margin-bottom: 4rem;
+
+            div {
+                @include flex-column(1rem);
+
+                a {
+                    text-decoration: none;
+                    color: #4a4a4a;
+                }
+
+                a:nth-of-type(1) {
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+
+            .logo {
+                width: 100%;
+
+                img {
+                    scale: 0.8;
+                    align-self: flex-start;
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+
+            a {
+                text-decoration: none;
+
+                i {
+                    font-size: 1.2rem;
+                    color: rgb(58, 58, 58);
+                }
+            }
+        }
+
+        .tray {
+            @include flex-column(1rem);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            div:nth-of-type(1) {
+                color: grey;
+            }
+
+            div:nth-of-type(2) {
+                display: flex;
+                gap: 1rem;
+                a {
+                    color: grey;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                }
+            }
+        }
     }
 }
 
@@ -584,6 +656,45 @@ main {
                     gap: 2rem;
                 }
             }
+        }
+
+        footer {
+            .main {
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+
+                div {
+                    margin-right: 3rem;
+                }
+
+                div:nth-of-type(1) {
+                    margin-right: 0;
+                }
+
+                div:nth-of-type(4) {
+                    margin-top: 2rem;
+                }
+
+                .logo {
+                    width: 50%;
+                }
+            }
+
+            .socials {
+                justify-content: flex-start;
+            }
+
+            .tray {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: start;
+            
+            div:nth-of-type(1) {
+                width: 80%;
+            }
+        }
         }
     }
 }
